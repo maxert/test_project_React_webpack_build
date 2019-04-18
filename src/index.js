@@ -5,16 +5,13 @@ import Sectionone from "./sectionone";
 import Sectiontwo from "./sectiontwo";
 import Sectionthree from "./sectionthree";
 import Header from "./header";
-import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
-  <>
+  <div className="wrapper">
     <Header />
     <Sectionone />
     <Sectiontwo />
     <Sectionthree />
-  </>,
+  </div>,
   document.getElementsByTagName("main")[0],
 );
-
-serviceWorker.unregister();
