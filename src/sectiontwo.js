@@ -4,12 +4,12 @@ class Sectiontwo extends Component {
   render() {
     return (
       <section className='section_two'>
-        <div className='text_center'>
+        <div className='section-two__text_head'>
           <h2>Теперь ты свободен</h2>
           <img src={require("./svg-icon/sock.svg")} alt='Картинка' />
         </div>
         <div className='center_section_element'>
-          <div className='left_items'>
+          <div className='section-two__left_items'>
             <span>1</span>
             <form>
               <p>Заполни поля в форме</p>
@@ -19,7 +19,7 @@ class Sectiontwo extends Component {
               </div>
             </form>
           </div>
-          <div className='right_items'>
+          <div className='section-two_right_items'>
             <form>
               <p>Получи смету на почту</p>
               <div className='form-group'>

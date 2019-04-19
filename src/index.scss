@@ -1,6 +1,6 @@
 $h1:4vw;
 $h2:3vw;
-$h3:36px;
+$h3:1.9vw;
 $h4:1.4vw;
 $h5:1.0vw;
 $size:25vw !important;
@@ -29,7 +29,7 @@ body {
 
 
 
-.form-group {
+.form_container {
     display: flex;
 }
 
@@ -64,23 +64,23 @@ header {
         margin-left: 60px
     }
 
-    .left_header {
+    .header__left {
         display: flex;
         margin-right: 57px;
     }
 
-    .left_header img {
+    .header__left img {
         margin-right: 10px;
     }
 
-    .left_header p {
+    .header__left p {
         margin: 0;
     }
 
 }
 
 
-.left_header {
+.header__left {
     cursor: pointer;
 }
 
@@ -93,7 +93,7 @@ header {
         height: auto;
     }
 
-    .center_content {
+    .section-one__center_content {
         margin-top: 60px;
         display: flex;
         justify-content: center;
@@ -126,7 +126,7 @@ header {
             color: $color;
         }
 
-        button {
+        .section-one__button_bottom {
             margin-top: 44px;
             margin-bottom: 85px;
             cursor: pointer;
@@ -162,7 +162,7 @@ header {
     align-items: center;
     flex-direction: column;
 
-    .text_center {
+    .section-two__text_head {
         margin-top: 214px;
         margin-bottom: 151px;
         position: relative;
@@ -195,7 +195,7 @@ header {
         display: flex;
     }
 
-    .left_items {
+    .section-two__left_items {
         display: flex;
         width: 100%;
         max-width: 901px;
@@ -248,7 +248,7 @@ header {
         }
     }
 
-    .right_items {
+    .section-two_right_items {
         margin-top: 170px;
         display: flex;
         width: 100%;
@@ -313,13 +313,13 @@ header {
     align-items: center;
     position: relative;
 
-    >img:nth-child(1) {
+    .section-three__left_img {
         position: absolute;
         top: -100px;
         left: 104px;
     }
 
-    >img:last-child {
+    .section-three_right_img {
         top: 336px;
         position: absolute;
         right: 260px;
@@ -330,7 +330,7 @@ header {
         -o-transform: translate(0%, 0%);
     }
 
-    .center_content {
+    .section-three__center_content {
         margin-top: 162px;
         position: relative;
         z-index: 1;
@@ -367,7 +367,7 @@ header {
                 max-width: 433px;
             }
 
-            .form-group {
+            .form_container {
                 margin-bottom: 22px;
             }
 
@@ -421,7 +421,7 @@ header {
     }
 }
 
-.left_content {
+.section-three_right_bottom_text {
     p {
         margin: 0px;
     }
@@ -446,53 +446,46 @@ header {
         left: 50px;
     }
 
-    .section_two .left_items>span,
-    .section_two .right_items>span {}
-
-    .section_two .right_items,
-    .section_two .left_items {
+    .section_two .section-two_right_items,
+    .section_two .section-two__left_items {
         height: 280px;
     }
 
-    .section_two .right_items form p,
-    .section_two .left_items form p {
+    .section_two .section-two_right_items form p,
+    .section_two .section-two__left_items form p {
         font-size: 18px;
     }
 
-    .section_two .left_items>span {}
+
 }
 
 @media screen and (max-width:1250px) {
 
-    .section_two .left_items>span {
+    .section_two .section-two__left_items>span {
         margin-left: auto;
-    }
-
-    .section_three img {
-        display: none;
     }
 
     .section_two .center_section_element {
         flex-direction: column;
     }
 
-    .section_two .left_items {
+    .section_two .section-two__left_items {
         margin-bottom: inherit;
     }
 
-    .section_two .right_items,
-    .section_two .left_items {
+    .section_two .section-two_right_items,
+    .section_two .section-two__left_items {
         max-width: 600px;
     }
 
-    .section_two .text_center img {
+    .section_two .section-two__text_head img {
         z-index: 0;
         right: 0px;
         top: -10px;
         transform: none;
     }
 
-    .section_two .left_items {
+    .section_two .section-two__left_items {
         position: relative;
         z-index: 1;
     }
@@ -504,19 +497,19 @@ header {
 }
 
 @media screen and (max-width:760px) {
-    .section_three .center_content {
+    .section_three .section-three__center_content {
         margin-top: 100px;
     }
 
-    .section_two .right_items {
+    .section_two .section-two_right_items {
         margin-bottom: 100px;
     }
 
-    .section_two .text_center {
+    .section_two .section-two__text_head {
         margin-top: 100px;
     }
 
-    .section_two .right_items>span {
+    .section_two .section-two_right_items>span {
         margin-right: auto;
     }
 
@@ -528,25 +521,27 @@ header {
         display: none;
     }
 
-    .section_two .left_items>span,
-    .section_two .right_items>span {
+    .section_two .section-two__left_items>span,
+    .section_two .section-two_right_items>span {
         font-size: 200px;
         top: -50%;
     }
 
-    .section_two .left_items form textarea,
-    .section_two .right_items form textarea {
+    .section_two .section-two__left_items form textarea,
+    .section_two .section-two_right_items form textarea {
         width: 100%;
         max-height: 200px;
     }
 
-    .section_three .center_content form {
+    .section_three .section-three__center_content form {
         padding: 0px 20px;
     }
+
+    .section_one .section-one__center_content h3 {
+        font-size: 14px;
+    }
 }
-.section_one .center_content h3 {
-    font-size: 14px;
-}
+
 @media screen and (max-width:580px) {
 
 
@@ -554,11 +549,11 @@ header {
         margin-left: 20px;
     }
 
-    header .left_header {
+    header .header__left {
         margin-right: 20px;
     }
 
-    .section_one .center_content h1 {
+    .section_one .section-one__center_content h1 {
         font-size: 40px;
     }
 
@@ -566,23 +561,22 @@ header {
         font-size: 30px;
     }
 
-    .section_three .center_content h3 {
+    .section_three .section-three__center_content h3 {
         font-size: 20px;
     }
 
-    .section_one .center_content {
+    .section_one .section-one__center_content {
         margin-top: 109px;
     }
 
-    .section_two .left_items>span,
-    .section_two .right_items>span {}
 
-    .section_three .center_content form {
+
+    .section_three .section-three__center_content form {
         height: auto;
         padding: 40px 20px;
     }
 
-    .section_two .text_center img {
+    .section_two .section-two__text_head img {
         width: 110px;
         top: 95%;
         right: 20px;

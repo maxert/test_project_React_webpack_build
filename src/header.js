@@ -5,11 +5,14 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <a href="/"><img src={logo}
-     className="logo" alt=""/></a>
-        <div className='left_header'>
+        <a href='/'>
+          <img src={logo} className='logo' alt='' />
+        </a>
+        <div className='header__left'>
           <img src={bitcoin} alt='Картинка' />
-          <p>освободить<br></br> разработчиков</p>
+          <p>
+            освободить<br /> разработчиков
+          </p>
         </div>
       </header>
     );

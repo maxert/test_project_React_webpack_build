@@ -4,29 +4,29 @@ class Sectionthree extends Component {
   render() {
     return (
       <section className='section_three'>
-      <img src={require("./img/illustration-girl.png")} alt="Картинка"></img>
-        <div className='center_content'>
+      <img className="section-three__left_img" src={require("./img/illustration-girl.png")} alt="Картинка"></img>
+        <div className='section-three__center_content'>
           <h3>Заполни поля и наш менеджер свяжется с тобой для уточнения данных</h3>
           <form>
             <div>
-              <div className='form-group'>
-                <input type='text' className='form-control' name='name' id='' aria-describedby='helpId' placeholder='Ваше имя' />
+              <div className='form_container'>
+                <input type='text' className='form_container__input' name='name' id='' placeholder='Ваше имя' />
               </div>
-              <div className='form-group'>
-                <input type='text' className='form-control' name='telephone' id='' aria-describedby='helpId' placeholder='Телефон' />
+              <div className='form_container'>
+                <input type='text' className='form_container__input' name='telephone' id=''  placeholder='Телефон' />
               </div>
-              <div className='form-group'>
-                <input type='email' className='form-control' name='email' id='' aria-describedby='helpId' placeholder='Email' />
+              <div className='form_container'>
+                <input type='email' className='form_container__input' name='email' id=''placeholder='Email' />
               </div>
               <button type='button' >Отправить</button>
             </div>
           </form>
         </div>
-        <div className='left_content'>
-          <img src={require("./svg-icon/ik-question.svg")} alt='Картинка' />
+        <div className='section-three_right_bottom_text'>
+          <img  src={require("./svg-icon/ik-question.svg")} alt='Картинка' />
           <p>есть<br></br> вопрос?</p>
         </div>
-        <img src={require("./svg-icon/illistration.svg")} alt="Картинка"></img>
+        <img className="section-three_right_img" src={require("./svg-icon/illistration.svg")} alt="Картинка"></img>
       </section>
     );
   }
