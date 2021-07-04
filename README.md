@@ -2,7 +2,6 @@
 
 Тестовый проект для совместимости React с webpack<br>
 Для запуска нужно использовать дальнейшие инструкции:
-- [Available Scripts](#available-scripts)
   - [npm start](#npm-start)
   - [npm run build](#npm-run-build)
 
